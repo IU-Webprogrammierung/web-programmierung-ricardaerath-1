@@ -1,20 +1,22 @@
 # Web-Programmierung - Ricarda Erath
 
-Diese Website präsentiert die Ferienwohnung "Haus Erath" mit einer flachen Navigation, die mit HTML, CSS und JavaScript erstellt wurde.
-Es gibt die Seiten "Das Haus", "Die Ferienwohnung" und "Die Lage und Attraktionen", sowie ein Kontaktformular für Buchungsanfragen.
+Copy
 
 ## Seitenbeschreibung
-### Startseite "Das Haus" 
-Enthält Bilder und Informationen über das Haus. Diese Startseite soll dazu dienen, dass sich die Nutzer einen schnellen Überblick schaffen können und Interesse wecken, sich weitergehend zu informieren.
+### Startseite 
+Konzept folgt
 
-### Die Ferienwohnung 
-Beschreibt die Unterkunft, bildet Fotos ab, erklärt die Ausstattung und einen Grundriss.
+### Seite 1 
+Konzept folgt
 
-### Die Lage und Attraktionen
-Beschreibt den genauen Standort der Ferienwohnung, sowie einige Sehenswürdigkeiten.
+### Seite 2
+Konzept folgt
 
-### Buchungsanfrage senden 
-Ein Kontaktformular zur Erfassung von Buchungsanfragen mit den Daten "Vorname, Nachname, E-Mail, Telefonnummer, Land, Von, Bis, Anzahl Personen"
+### Seite 3
+Konzept folgt
+
+### Seite 4
+Konzept folgt
 
 
 # Autorin
