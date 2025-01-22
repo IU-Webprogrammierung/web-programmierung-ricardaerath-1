@@ -23,5 +23,5 @@ Hier können Besucher einfach und direkt Kontakt zu mir aufnehmen. Die Seite ent
 # Autorin
 Ricarda Erath
 
-Dieses Projekt wurde im Rahmen eines Webprogrammierungsprojekts entwickelt und vereint Design, Technik und meine persönlichen Leidenschaften. Ziel ist es, eine moderne, barrierefreie Website zu erstellen, die meine Interessen authentisch präsentiert.  
+Dieses Projekt wurde im Rahmen eines Webprogrammierungsprojekts entwickelt. Ziel ist es, eine moderne, barrierefreie Website zu erstellen, die meine Interessen präsentiert.  
 ```
