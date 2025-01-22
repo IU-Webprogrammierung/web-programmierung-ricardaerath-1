@@ -1,23 +1,27 @@
 # Web-Programmierung - Ricarda Erath
-
-Copy
+Diese Website ist ein One-Pager mit 4 Ankerpunkte.
 
 ## Seitenbeschreibung
-### Startseite 
-Konzept folgt
+### Startseite  
+Die Startseite dient als Einstiegspunkt für Besucher, um sich schnell zu orientieren.
 
-### Seite 1 
-Konzept folgt
+### Seite 1: Über Mich  
+Dieser Ankerpunkt führt zu Einblicke in meine Persönlichkeit, meinen beruflichen Werdegang und meine Hobbys. Hier erfährt der Besucher, wer ich bin und was mich antreibt.
 
-### Seite 2
-Konzept folgt
+### Seite 2: Gleitschirmfliegen  
+In diesem Abschnitt teile ich meine Erfahrungen und Begeisterung für das Gleitschirmfliegen. Der Text beschreibt meinen Einstieg in den Sport, den Grundkurs beim Sky Club Austria und meinen ersten Flug vom Michaelerberg. Basisinformationen über Gleitschirmfliegen und den Ablauf eines Grundkurses runden den Inhalt ab.  
 
-### Seite 3
-Konzept folgt
+### Seite 3: Pilates  
+Diese Seite widmet sich meiner Leidenschaft für Pilates und informiert über die Vielseitigkeit der Methode. Es wird speziell auf Reformer Pilates eingegangen, ein Training auf speziellen Geräten, das sich an alle Fitnesslevels anpassen lässt. Außerdem beschreibe ich meine aktuelle Ausbildung zur Pilatestrainerin. 
 
-### Seite 3
-Konzept folgt
+### Seite 4: Kontaktaufnahme  
+Hier können Besucher einfach und direkt Kontakt zu mir aufnehmen. Die Seite enthält:  
+- Einen Button, der eine E-Mail auslöst  
+- Zwei Social Media Icons für LinkedIn und Instagram, die zu meinen Profilen verlinken 
 
 
 # Autorin
 Ricarda Erath
+
+Dieses Projekt wurde im Rahmen eines Webprogrammierungsprojekts entwickelt und vereint Design, Technik und meine persönlichen Leidenschaften. Ziel ist es, eine moderne, barrierefreie Website zu erstellen, die meine Interessen authentisch präsentiert.  
+```
