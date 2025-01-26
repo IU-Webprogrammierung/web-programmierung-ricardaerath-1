@@ -3,11 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite</title>
+    <title>Ricardas Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hi! Ich bin Ricarda.</h1>
-    <p>Auf dieser Seite lernst du mich und meine Hobbys kennen.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Über mich</a></li>
+                <li><a href="#">Gleitschirmfliegen</a></li>
+                <li><a href="#">Pilates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi! Ich bin Ricarda</h1>
+                <p>Auf dieser Seite lernst du mich und meine Hobbys kennen.</p>
+                <div class="hero-buttons">
+                    <button>Über mich</button>
+                    <button>Kontakt</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="topics">
+            <h2>Themenbereiche</h2>
+            <div class="topic-cards">
+                <div class="card">
+                    <h3>Über mich</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ipsum dolor sit amet.</p>
+                    <button>Label</button>
+                </div>
+                <div class="card">
+                    <h3>Gleitschirmfliegen</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ipsum dolor sit amet.</p>
+                    <button>Label</button>
+                </div>
+                <div class="card">
+                    <h3>Pilates</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ipsum dolor sit amet.</p>
+                    <button>Label</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-item">
+                <h2>Schreib mir ne Mail!</h2>
+                <p>Du möchtest mit mir in Kontakt treten? Ob Fragen, Anregungen oder einfach nur, um „Hallo” zu sagen – ich freue mich, von dir zu hören!</p>
+                <button>Mail senden</button>
+            </div>
+            <div class="contact-item">
+                <h2>Social Media</h2>
+                <p>Lass uns in Kontakt treten!</p>
+                <div class="social-icons">
+                    <a href="#">🔗</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Footer</p>
+            <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+        </div>
+    </footer>
 </body>
 </html>
