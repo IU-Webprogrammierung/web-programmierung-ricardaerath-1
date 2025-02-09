@@ -8,15 +8,27 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="Über mich.html">Über mich</a></li>
-                <li><a href="Gleitschirmfliegen.html">Gleitschirmfliegen</a></li>
-                <li><a href="Pilates.html">Pilates</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="hamburger">
+                <span class="bars">&#9776;</span>  <!-- Hamburger-Icon -->
+                <span class="close">&times;</span>  <!-- X-Symbol -->
+            </div>
+            
+            
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">Über mich</a>
+                <a href="#paragliding">Gleitschirmfliegen</a>
+                <a href="#pilates">Pilates</a>
+            </div>
         </nav>
     </header>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 
     <main>
         <div class="hero">
@@ -76,5 +88,9 @@
             <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
         </div>
     </footer>
+
+    <script src="navigation.js"></script>
+</body>
+</html>
 </body>
 </html>
