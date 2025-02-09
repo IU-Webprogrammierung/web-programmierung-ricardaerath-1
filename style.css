@@ -1,9 +1,15 @@
 /* General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Outfit', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Damit es immer den ganzen Bildschirm nutzt */
+    background-color: white;
 }
 
 header {
@@ -32,25 +38,71 @@ nav a.active {
 
 /* Hero Section (Home) */
 .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+.hero img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+.hero-text {
+    max-width: 400px;
+    text-align: left;
+}
+.hero h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+.hero p {
+    color: #555;
+    font-size: 1rem;
+}
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.buttons a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #fafafa;
+    min-width: 120px;
+}
+.buttons a:hover {
+    background: black;
+    color: white;
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons a {
+        width: 100%;
+        max-width: 250px;
+    }
 }
 
-.hero-content {
-    max-width: 600px;
-    margin: auto;
-}
-
-.hero-buttons button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #d485f2;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
 /* Topics Section (Home) */
 .topics {
