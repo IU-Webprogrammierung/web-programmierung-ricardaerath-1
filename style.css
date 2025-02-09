@@ -38,8 +38,8 @@ header {
     font-weight: bold;
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
-    padding: 10px 15px; /* Innenabstand für jeden Link */
-    margin: 0 15px; /* Außenabstand zwischen den Links */
+    padding: 10px 15px; 
+    margin: 0 15px;
 }
 
 .navbar a:hover,
@@ -70,7 +70,6 @@ header {
     display: none;
 }
 
-/* Wenn das Menü geöffnet ist, das X anzeigen */
 .hamburger.open .bars {
     display: none;
 }
@@ -85,7 +84,6 @@ header {
         justify-content: flex-start;
     }
 
-    /* Navigation verstecken und als Dropdown sichtbar machen */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -105,7 +103,6 @@ header {
         transform: translateY(0);
     }
 
-    /* Hamburger-Icon nur auf Mobilgeräten anzeigen */
     .hamburger {
         display: flex;
     }
@@ -129,7 +126,7 @@ header {
 .hero img {
     width: 658px;
     height: 350px;
-    border-radius: 24px; /* Ecken abrunden */
+    border-radius: 24px; 
     object-fit: cover;
     margin-top: 80px; 
 }
@@ -214,12 +211,73 @@ header {
 }
 
 .card {
-    background-color: #f9f9f9;
+    border-radius: 24px;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 24px;
+}
+
+.card-image h3 {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: left;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    text-align: left;
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    color:#000000;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-size: 0.8rem;
+    color:#333;
+    margin: 0;
+}
+
+
+.overlay button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
     max-width: 200px;
-    text-align: center;
+    display: block;
+    margin-top: 10px;
 }
 
 /* About Section */
