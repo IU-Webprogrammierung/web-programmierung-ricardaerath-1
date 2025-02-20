@@ -375,13 +375,52 @@ header {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    width: 100vw;
+    background-color: black;
+    color: #b3b3b3;
+    font-size: 14px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-footer a {
-    color: #d485f2;
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.footer-left, .footer-right {
+    background-color: black;
+    padding: 0 10px; 
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+
+.footer-line {
+    position: absolute;
+    transform: translateY(-50%); 
+    top: 50%;
+    left: 40px;
+    right: 40px;
+    height: 1px;
+    background-color: #666;
+    z-index: 1;
+}
+
+.footer-right a {
+    color: #b3b3b3;
     text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: white;
 }
