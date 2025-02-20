@@ -80,7 +80,7 @@ header {
 }
 
 /* Mobile Navigation */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navbar {
         justify-content: flex-start;
     }
@@ -171,7 +171,7 @@ header {
 }
 
 /* Mobile Hero Section */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hero {
         flex-direction: column;
         text-align: center;
@@ -281,7 +281,7 @@ header {
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .topic-cards {
         display: flex;
         flex-direction: column; /* Cards untereinander */
