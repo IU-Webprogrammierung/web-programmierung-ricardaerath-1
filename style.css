@@ -39,7 +39,7 @@ header {
     font-weight: bold;
     font-size: 1.2rem;
     transition: color 0.3s ease-in-out;
-    padding: 10px 15px; 
+    padding: 10px 15px;
     margin: 0 15px;
 }
 
@@ -127,9 +127,9 @@ header {
 .hero img {
     width: 658px;
     height: 350px;
-    border-radius: 24px; 
+    border-radius: 24px;
     object-fit: cover;
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 
 .hero-text {
@@ -176,7 +176,7 @@ header {
         flex-direction: column;
         text-align: center;
         padding: 20px;
-        padding-left: 20px; 
+        padding-left: 20px;
         padding-right: 20px;
     }
 
@@ -195,9 +195,9 @@ header {
     }
 }
 
-    .hero img {
-        width: 80%;
-    }
+.hero img {
+    width: 80%;
+}
 
 /* Topics Section */
 .topics {
@@ -255,14 +255,14 @@ header {
 
 .overlay h3 {
     font-size: 1.5rem;
-    color:#000000;
-    margin-top: 10px; 
+    color: #000000;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 
 .overlay p {
     font-size: 0.8rem;
-    color:#333;
+    color: #333;
     margin: 0;
 }
 
@@ -284,13 +284,13 @@ header {
 @media (max-width: 1024px) {
     .topic-cards {
         display: flex;
-        flex-direction: column; /* Cards untereinander */
-        align-items: center; /* Zentriert die Cards */
-        gap: 20px; /* Abstand zwischen den Cards */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     .card {
-        max-width: 90%; /* Verkleinert die Cards für Mobilgeräte */
+        max-width: 90%;
     }
 }
 
