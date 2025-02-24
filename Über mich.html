@@ -4,59 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero Section</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Ricardas Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+</head>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Über%20mich.html" class="active">Über mich</a></li>
-                <li><a href="Gleitschirmfliegen.html">Gleitschirmfliegen</a></li>
-                <li><a href="Pilates.html">Pilates</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="hamburger">
+                <span class="bars">&#9776;</span>
+                <span class="close">&times;</span>
+            </div>
+
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">Über mich</a>
+                <a href="#paragliding">Gleitschirmfliegen</a>
+                <a href="#pilates">Pilates</a>
+            </div>
         </nav>
     </header>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 
     <main>
-        <div class="hero">
-            <img src="img/ich.jpg" alt="Ricarda am Wasser">
-            <div class="hero-text">
-                <p>Home</p>
-                <h1>Hi! Ich bin Ricarda</h1>
-                <p>Auf dieser Seite lernst du mich und meine Hobbys kennen.</p>
-                <div class="buttons">
-                    <a href="#">Über mich</a>
-                    <a href="#">Kontakt</a>
+        <div class="image-section">
+            <img src="img/hero_uebermich.png" alt="Ricarda mit VR-Brille">
+        </div>
+        
+        <div class="about-section">
+            <div class="text-section">
+                <h1>Über mich</h1>
+                <p>Ich bin Ricarda, 26 Jahre alt und UX Designerin bei der Thieme Group in Heidelberg. 
+                   Kreativität und Design sind meine Leidenschaft ✨.</p>
+                <a href="#" class="btn">Kontakt</a>
+            </div>
+            
+
+            <div class="container">
+                <img src="img/uebermich1.jpg" alt="Gleitschirmfliegen" width="300">
+                <div class="text">
+                    <h2>...und das sind meine Hobbys</h2>
+                    <p>Außerhalb der Arbeit bin ich gern aktiv – ich liebe Gleitschirmfliegen 🪂.<br>
+                       Pilates 🧘‍♀️ ist für mich der perfekte Ausgleich, um Körper und Geist in Einklang zu bringen.</p>
+                    <p>Jetzt möchte ich diese Leidenschaft mit dir teilen.</p>
+                    <a href="#" class="btn">Zur Startseite</a>
                 </div>
             </div>
-        </div>
-        <div class="about-images">
-            <!-- Placeholder for Images -->
-            <div class="image-placeholder"></div>
-            <div class="image-placeholder"></div>
-            <div class="image-placeholder"></div>
-        </div>
-        </section>
-
-        <section class="hobbies">
-            <h2>...und das sind meine Hobbys</h2>
-            <p>Außerhalb der Arbeit bin ich gern aktiv – ich liebe Gleitschirmfliegen 🧑‍🛩️. Pilates 💪 ist für mich
-                der perfekte Ausgleich, um Körper und Geist in Einklang zu bringen.</p>
-            <p>Jetzt möchte ich diese Leidenschaft mit dir teilen.</p>
-            <button>Zur Startseite</button>
-        </section>
 
         <section class="contact">
             <div class="contact-item">
                 <h2>Schreib mir ne Mail!</h2>
                 <p>Du möchtest mit mir in Kontakt treten? Ob Fragen, Anregungen oder einfach nur, um „Hallo” zu sagen –
-                    ich freue mich, von dir zu hören! Einfach klicken und loslegen – ich freue mich auf deine Nachricht!
-                    😊</p>
-                <button>E-Mail schreiben</button>
+                    ich freue mich, von dir zu hören!</p>
+                <button>Mail senden</button>
             </div>
             <div class="contact-item">
                 <h2>Social Media</h2>
@@ -69,12 +77,24 @@
         </section>
     </main>
 
+    
+
     <footer>
-        <div class="footer-content">
-            <p>Footer</p>
-            <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+        <div class="footer-container">
+            <div class="footer-left"></div>
+            <div class="footer-right">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
         </div>
+        <div class="footer-line"></div>
     </footer>
+    
+
+    <script src="navigation.js"></script>
+</body>
+
+</html>
 </body>
 
 </html>
