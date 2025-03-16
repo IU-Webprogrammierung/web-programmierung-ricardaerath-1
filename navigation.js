@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Hamburger wurde geklickt!");
 
         navLinks.classList.toggle("show");
-        hamburger.classList.toggle("open"); // Umschalten zwischen Hamburger und X
+        hamburger.classList.toggle("open"); 
 
         if (navLinks.classList.contains("show")) {
             console.log("✅ Menü wurde erfolgreich geöffnet!");
@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Menü schließen, wenn ein Link geklickt wird
+
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", function () {
             console.log("Menü schließt sich beim Klick auf einen Link.");
             navLinks.classList.remove("show");
-            hamburger.classList.remove("open"); // X zurück zum Hamburger machen
+            hamburger.classList.remove("open"); 
         });
     });
 });
