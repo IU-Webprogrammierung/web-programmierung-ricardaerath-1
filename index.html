@@ -14,19 +14,25 @@
     <header>
         <nav class="navbar">
             <div class="hamburger">
-                <span class="bars">&#9776;</span>
-                <span class="close">&times;</span>
+                <span class="bars">☰</span>
+                <span class="close">✖</span>
+
             </div>
-
-
             <div class="nav-links" id="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">Über mich</a>
-                <a href="#paragliding">Gleitschirmfliegen</a>
-                <a href="#pilates">Pilates</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">Über mich</a>
+                <a href="paragliding.html">Gleitschirmfliegen</a>
+                <a href="pilates.html">Pilates</a>
             </div>
+            
         </nav>
     </header>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 
     <main>
         <div class="hero">
