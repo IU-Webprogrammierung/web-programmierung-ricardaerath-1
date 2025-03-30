@@ -12,30 +12,30 @@
 </head>
 
 <body>
-    <header class="bg-white w-full fixed top-0 left-0 z-50 shadow">
-        <nav class="flex justify-between items-center max-w-6xl mx-auto px-6 py-4">
-          <div class="hidden lg:block text-xl font-semibold text-gray-800">Ricarda</div>
+    <header class="bg-white fixed top-0 left-0 w-full shadow z-50">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+          <div class="hidden lg:block font-bold text-xl text-gray-800">Ricarda</div>
       
-          <div id="burger" class="lg:hidden text-3xl cursor-pointer z-50">
+          <button id="menu-toggle" class="lg:hidden text-3xl text-gray-800 z-50">
             ☰
-          </div>
+          </button>
       
-          <div class="hidden lg:flex gap-8 font-semibold text-gray-800">
-            <a href="index.html" class="hover:text-purple-500">Home</a>
-            <a href="ueber-mich.html" class="hover:text-purple-500">Über mich</a>
-            <a href="Gleitschirmfliegen.html" class="hover:text-purple-500">Gleitschirmfliegen</a>
-            <a href="Pilates.html" class="hover:text-purple-500">Pilates</a>
+          <div class="hidden lg:flex gap-8 font-semibold text-gray-800" id="desktop-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="ueber-mich.html" class="nav-link">Über mich</a>
+            <a href="Gleitschirmfliegen.html" class="nav-link">Gleitschirmfliegen</a>
+            <a href="Pilates.html" class="nav-link">Pilates</a>
           </div>
         </nav>
       
-        <div id="mobile-nav" class="hidden fixed inset-0 bg-white flex flex-col items-center justify-center gap-10 text-3xl font-bold text-gray-900 z-40">
-          <span id="close" class="absolute top-6 right-6 text-4xl cursor-pointer">×</span>
-          <a href="index.html">Home</a>
-          <a href="ueber-mich.html">Über mich</a>
-          <a href="Gleitschirmfliegen.html">Gleitschirmfliegen</a>
-          <a href="Pilates.html">Pilates</a>
+        <div id="nav-links" class="hidden fixed inset-0 bg-white flex flex-col items-center justify-center gap-10 text-3xl font-bold text-gray-900 z-40">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="ueber-mich.html" class="nav-link">Über mich</a>
+          <a href="Gleitschirmfliegen.html" class="nav-link">Gleitschirmfliegen</a>
+          <a href="Pilates.html" class="nav-link">Pilates</a>
         </div>
       </header>
+      
       
       
     <main>

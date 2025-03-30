@@ -1,14 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.getElementById("burger");
-    const close = document.getElementById("close");
-    const mobileNav = document.getElementById("mobile-nav");
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    const currentPage = window.location.pathname.split("/").pop();
+    const allLinks = document.querySelectorAll(".nav-link");
   
-    burger.addEventListener("click", () => {
-      mobileNav.classList.remove("hidden");
+    // Toggle mobile menu + icon
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("hidden");
+      toggle.innerText = navLinks.classList.contains("hidden") ? "☰" : "×";
     });
   
-    close.addEventListener("click", () => {
-      mobileNav.classList.add("hidden");
+    // Highlight current page
+    allLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("text-purple-500", "underline");
+      }
     });
   });
   
