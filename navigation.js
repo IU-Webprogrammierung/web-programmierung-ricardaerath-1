@@ -1,18 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const bars = document.querySelector(".bars");
-    const close = document.querySelector(".close");
-    const navLinks = document.getElementById("nav-links");
+document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("burger");
+    const close = document.getElementById("close");
+    const mobileNav = document.getElementById("mobile-nav");
   
-    navLinks.classList.add("hidden");
-    close.classList.add("hidden");
+    burger.addEventListener("click", () => {
+      mobileNav.classList.remove("hidden");
+    });
   
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("hidden");
-  
-      const isMenuOpen = !navLinks.classList.contains("hidden");
-      bars.classList.toggle("hidden", isMenuOpen);
-      close.classList.toggle("hidden", !isMenuOpen);
+    close.addEventListener("click", () => {
+      mobileNav.classList.add("hidden");
     });
   });
   

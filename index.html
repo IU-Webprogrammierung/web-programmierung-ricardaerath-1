@@ -5,34 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardas Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
     <script src="navigation.js" defer></script>
 </head>
 
 <body>
-    <header class="bg-gray-100 px-5 z-50">
-        <nav class="navbar flex justify-between items-center px-5 py-4 bg-white shadow-md w-full fixed top-0 left-0 z-50">
-          
-          <div class="text-xl font-bold">Ricarda</div>
+    <header class="bg-white w-full fixed top-0 left-0 z-50 shadow">
+        <nav class="flex justify-between items-center max-w-6xl mx-auto px-6 py-4">
+          <div class="hidden lg:block text-xl font-semibold text-gray-800">Ricarda</div>
       
-          <div class="hamburger flex lg:hidden items-center justify-center w-10 h-10 relative cursor-pointer text-2xl">
-            <span class="bars">☰</span>
-            <span class="close hidden">×</span>
+          <div id="burger" class="lg:hidden text-3xl cursor-pointer z-50">
+            ☰
           </div>
       
-          <div id="nav-links"
-               class="hidden flex-col lg:flex lg:flex-row items-center absolute lg:static top-20 left-0 w-full lg:w-auto bg-white lg:bg-transparent px-5 py-4 lg:p-0 text-center gap-4 transition-all duration-300 ease-in-out">
-            <a href="index.html" class="text-gray-800 font-semibold text-lg px-4 py-2 hover:text-purple-400 hover:underline">Home</a>
-            <a href="ueber-mich.html" class="text-gray-800 font-semibold text-lg px-4 py-2 hover:text-purple-400 hover:underline">Über mich</a>
-            <a href="Gleitschirmfliegen.html" class="text-gray-800 font-semibold text-lg px-4 py-2 hover:text-purple-400 hover:underline">Gleitschirmfliegen</a>
-            <a href="Pilates.html" class="text-gray-800 font-semibold text-lg px-4 py-2 hover:text-purple-400 hover:underline">Pilates</a>
+          <div class="hidden lg:flex gap-8 font-semibold text-gray-800">
+            <a href="index.html" class="hover:text-purple-500">Home</a>
+            <a href="ueber-mich.html" class="hover:text-purple-500">Über mich</a>
+            <a href="Gleitschirmfliegen.html" class="hover:text-purple-500">Gleitschirmfliegen</a>
+            <a href="Pilates.html" class="hover:text-purple-500">Pilates</a>
           </div>
         </nav>
+      
+        <div id="mobile-nav" class="hidden fixed inset-0 bg-white flex flex-col items-center justify-center gap-10 text-3xl font-bold text-gray-900 z-40">
+          <span id="close" class="absolute top-6 right-6 text-4xl cursor-pointer">×</span>
+          <a href="index.html">Home</a>
+          <a href="ueber-mich.html">Über mich</a>
+          <a href="Gleitschirmfliegen.html">Gleitschirmfliegen</a>
+          <a href="Pilates.html">Pilates</a>
+        </div>
       </header>
       
       
-
     <main>
         <div class="hero">
             <img src="img/ich.jpg" alt="Ricarda am Wasser">
