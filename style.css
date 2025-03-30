@@ -286,6 +286,27 @@ header {
     margin-top: 10px;
 }
 
+.card-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    width: fit-content;
+  }
+  
+  .card-button:hover {
+    background-color: #333;
+  }
+  
+
 @media (max-width: 1024px) {
     .topic-cards {
         display: flex;
