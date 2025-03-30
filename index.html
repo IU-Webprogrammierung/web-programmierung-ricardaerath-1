@@ -39,54 +39,83 @@
       
       
     <main>
-        <div class="hero">
-            <img src="img/ich.jpg" alt="Ricarda am Wasser">
-            <div class="hero-text">
-                <p>Home</p>
-                <h1>Hi! Ich bin Ricarda</h1>
-                <p>Auf dieser Seite lernst du mich und meine Hobbys kennen.</p>
-                <div class="buttons">
-                    <a href="ueber-mich.html">Über mich</a>
-                    <a href="#kontakt">Kontakt</a>
+        <section class="mt-32 px-6 lg:px-0">
+            <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
+              
+              <div class="text-center lg:text-left max-w-xl">
+                <p class="text-sm text-gray-500 mb-2">Home</p>
+                <h1 class="text-3xl lg:text-4xl font-bold mb-4">Hi! Ich bin Ricarda</h1>
+                <p class="text-base text-gray-600 mb-6">
+                  Auf dieser Seite lernst du mich und meine Hobbys kennen.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <a href="ueber-mich.html"
+                     class="px-6 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition">
+                    Über mich
+                  </a>
+                  <a href="#kontakt"
+                     class="px-6 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition">
+                    Kontakt
+                  </a>
                 </div>
+              </div>
+          
+              <div class="flex-1">
+                <img src="img/ich.jpg" alt="Ricarda am Wasser"
+                     class="rounded-3xl w-full h-auto object-cover shadow-md" />
+              </div>
+          
             </div>
-        </div>
+          </section>
+          
 
-        <section class="topics">
-            <h2>Themenbereiche</h2>
-            <div class="topic-cards">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/cards.png" alt="Über mich">
-                        <div class="overlay">
-                            <h3>Über mich</h3>
-                            <p>Neugierig, kreativ, technikverliebt – hier bekommst du einen Einblick in meine Welt.</p>
-                            <a href="ueber-mich.html" class="card-button">Über mich</a>
-                        </div>
-                    </div>
+          <section class="px-6 py-20 bg-white">
+            <div class="max-w-6xl mx-auto text-center">
+              <h2 class="text-3xl font-bold mb-12">Themenbereiche</h2>
+          
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="rounded-3xl overflow-hidden shadow-lg relative group">
+                  <img src="img/cards.png" alt="Über mich" class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                    <h3 class="text-xl font-bold text-white mb-2">Über mich</h3>
+                    <p class="text-sm text-white mb-4">Neugierig, kreativ, technikverliebt – hier bekommst du einen Einblick in meine Welt.</p>
+                    <a href="ueber-mich.html"
+                       class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+                      Über mich
+                    </a>
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/cards (1).png" alt="Gleitschirmfliegen">
-                        <div class="overlay">
-                            <h3>Gleitschirmfliegen</h3>
-                            <p>Hoch hinaus, frei fühlen, den Moment genießen – mein Abenteuer in der Luft.</p>
-                            <a href="Gleitschirmfliegen.html" class="card-button">Gleitschirmfliegen</a>
-                        </div>
-                    </div>
+          
+                <div class="rounded-3xl overflow-hidden shadow-lg relative group">
+                  <img src="img/cards (1).png" alt="Gleitschirmfliegen" class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                    <h3 class="text-xl font-bold text-white mb-2">Gleitschirmfliegen</h3>
+                    <p class="text-sm text-white mb-4">Hoch hinaus, frei fühlen, den Moment genießen – mein Abenteuer in der Luft.</p>
+                    <a href="Gleitschirmfliegen.html"
+                       class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+                      Gleitschirmfliegen
+                    </a>
+                  </div>
                 </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/cards (2).png" alt="Pilates">
-                        <div class="overlay">
-                            <h3>Pilates</h3>
-                            <p>Stärke, Balance und Fokus – Pilates als Energiequelle für Körper & Geist.</p>
-                            <a href="pilates.html" class="card-button">Pilates</a>
-                        </div>
-                    </div>
+          
+                <div class="rounded-3xl overflow-hidden shadow-lg relative group">
+                  <img src="img/cards (2).png" alt="Pilates" class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                    <h3 class="text-xl font-bold text-white mb-2">Pilates</h3>
+                    <p class="text-sm text-white mb-4">Stärke, Balance und Fokus – Pilates als Energiequelle für Körper & Geist.</p>
+                    <a href="pilates.html"
+                       class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+                      Pilates
+                    </a>
+                  </div>
                 </div>
+          
+              </div>
             </div>
-        </section>
+          </section>
+          
 
 
 
