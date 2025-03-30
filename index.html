@@ -11,161 +11,169 @@
     <script src="navigation.js" defer></script>
 </head>
 
-<body>
+<body class="font-[Outfit] bg-white text-gray-800">
     <header class="bg-white fixed top-0 left-0 w-full shadow z-50">
-        <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">      
-          <button id="menu-toggle" class="lg:hidden text-3xl text-gray-800 z-50">
-            ☰
-          </button>
-      
-          <div class="hidden lg:flex gap-8 font-semibold text-gray-800" id="desktop-nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="ueber-mich.html" class="nav-link">Über mich</a>
-            <a href="Gleitschirmfliegen.html" class="nav-link">Gleitschirmfliegen</a>
-            <a href="Pilates.html" class="nav-link">Pilates</a>
-          </div>
+        <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+
+            <button id="menu-toggle" class="lg:hidden text-3xl text-gray-800 z-50">☰</button>
+
+            <div class="hidden lg:flex gap-8 font-semibold" id="desktop-nav">
+                <a href="index.html" class="text-purple-500 font-bold">Home</a>
+                <a href="ueber-mich.html" class="hover:text-purple-500">Über mich</a>
+                <a href="Gleitschirmfliegen.html" class="hover:text-purple-500">Gleitschirmfliegen</a>
+                <a href="Pilates.html" class="hover:text-purple-500">Pilates</a>
+
+            </div>
         </nav>
-      
-        <div id="nav-links" class="hidden fixed inset-0 bg-white flex flex-col items-center justify-center gap-10 text-3xl font-bold text-gray-900 z-40">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="ueber-mich.html" class="nav-link">Über mich</a>
-          <a href="Gleitschirmfliegen.html" class="nav-link">Gleitschirmfliegen</a>
-          <a href="Pilates.html" class="nav-link">Pilates</a>
+
+        <div id="nav-links"
+            class="hidden fixed inset-0 bg-white flex flex-col items-center justify-center gap-10 text-3xl font-bold z-40">
+            <a href="index.html">Home</a>
+            <a href="ueber-mich.html" class="text-purple-500">Über mich</a>
+            <a href="Gleitschirmfliegen.html">Gleitschirmfliegen</a>
+            <a href="Pilates.html">Pilates</a>
         </div>
-      </header>
-      
-      
-      
+    </header>
+
     <main>
         <section class="mt-32 px-6 lg:px-0">
             <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
-              
-              <div class="text-center lg:text-left max-w-xl">
-                <p class="text-sm text-gray-500 mb-2">Home</p>
-                <h1 class="text-3xl lg:text-4xl font-bold mb-4">Hi! Ich bin Ricarda</h1>
-                <p class="text-base text-gray-600 mb-6">
-                  Auf dieser Seite lernst du mich und meine Hobbys kennen.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <a href="ueber-mich.html"
-                     class="px-6 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition">
-                    Über mich
-                  </a>
-                  <a href="#kontakt"
-                     class="px-6 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition">
-                    Kontakt
-                  </a>
-                </div>
-              </div>
-          
-              <div class="flex-1">
-                <img src="img/ich.jpg" alt="Ricarda am Wasser"
-                     class="rounded-3xl w-full h-auto object-cover shadow-md" />
-              </div>
-          
-            </div>
-          </section>
-          
 
-          <section class="px-6 py-20 bg-white">
+                <div class="text-center lg:text-left max-w-xl">
+                    <p class="text-sm text-gray-500 mb-2">Home</p>
+                    <h1 class="text-3xl lg:text-4xl font-bold mb-4">Hi! Ich bin Ricarda</h1>
+                    <p class="text-base text-gray-600 mb-6">
+                        Auf dieser Seite lernst du mich und meine Hobbys kennen.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="ueber-mich.html"
+                            class="px-6 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition">
+                            Über mich
+                        </a>
+                        <a href="#kontakt"
+                            class="px-6 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition">
+                            Kontakt
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <img src="img/ich.jpg" alt="Ricarda am Wasser"
+                        class="rounded-3xl w-full h-auto object-cover shadow-md" />
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="px-6 py-20 bg-white">
             <div class="max-w-6xl mx-auto text-center">
-              <h2 class="text-3xl font-bold mb-12">Themenbereiche</h2>
-          
-              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="rounded-3xl overflow-hidden shadow-lg relative group">
-                  <img src="img/cards.png" alt="Über mich" class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
-                    <h3 class="text-xl font-bold text-white mb-2">Über mich</h3>
-                    <p class="text-sm text-white mb-4">Neugierig, kreativ, technikverliebt – hier bekommst du einen Einblick in meine Welt.</p>
-                    <a href="ueber-mich.html"
-                       class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
-                      Über mich
-                    </a>
-                  </div>
+                <h2 class="text-3xl font-bold mb-12">Themenbereiche</h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="rounded-3xl overflow-hidden shadow-lg relative group">
+                        <img src="img/cards.png" alt="Über mich"
+                            class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                            <h3 class="text-xl font-bold text-white mb-2">Über mich</h3>
+                            <p class="text-sm text-white mb-4">Neugierig, kreativ, technikverliebt – hier bekommst du
+                                einen Einblick in meine Welt.</p>
+                            <a href="ueber-mich.html"
+                                class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+                                Über mich
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl overflow-hidden shadow-lg relative group">
+                        <img src="img/cards (1).png" alt="Gleitschirmfliegen"
+                            class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                            <h3 class="text-xl font-bold text-white mb-2">Gleitschirmfliegen</h3>
+                            <p class="text-sm text-white mb-4">Hoch hinaus, frei fühlen, den Moment genießen – mein
+                                Abenteuer in der Luft.</p>
+                            <a href="Gleitschirmfliegen.html"
+                                class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+                                Gleitschirmfliegen
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="rounded-3xl overflow-hidden shadow-lg relative group">
+                        <img src="img/cards (2).png" alt="Pilates"
+                            class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
+                            <h3 class="text-xl font-bold text-white mb-2">Pilates</h3>
+                            <p class="text-sm text-white mb-4">Stärke, Balance und Fokus – Pilates als Energiequelle für
+                                Körper & Geist.</p>
+                            <a href="pilates.html"
+                                class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+                                Pilates
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-          
-                <div class="rounded-3xl overflow-hidden shadow-lg relative group">
-                  <img src="img/cards (1).png" alt="Gleitschirmfliegen" class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
-                    <h3 class="text-xl font-bold text-white mb-2">Gleitschirmfliegen</h3>
-                    <p class="text-sm text-white mb-4">Hoch hinaus, frei fühlen, den Moment genießen – mein Abenteuer in der Luft.</p>
-                    <a href="Gleitschirmfliegen.html"
-                       class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
-                      Gleitschirmfliegen
-                    </a>
-                  </div>
-                </div>
-          
-                <div class="rounded-3xl overflow-hidden shadow-lg relative group">
-                  <img src="img/cards (2).png" alt="Pilates" class="w-full h-72 object-cover transition duration-300 group-hover:scale-105" />
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-6 flex flex-col justify-end">
-                    <h3 class="text-xl font-bold text-white mb-2">Pilates</h3>
-                    <p class="text-sm text-white mb-4">Stärke, Balance und Fokus – Pilates als Energiequelle für Körper & Geist.</p>
-                    <a href="pilates.html"
-                       class="self-start px-5 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
-                      Pilates
-                    </a>
-                  </div>
-                </div>
-          
-              </div>
             </div>
-          </section>
-          
+        </section>
 
 
 
-          <section id="kontakt" class="bg-gray-100 border-t border-b border-black py-16 px-6">
+
+        <section id="kontakt" class="bg-gray-100 border-t border-b border-black py-16 px-6">
             <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          
-              <div class="flex flex-col items-center text-center px-6">
-                <h2 class="text-3xl font-bold mb-4">Schreib mir ne Mail!</h2>
-                <p class="text-gray-600 max-w-md mb-6">
-                  Du möchtest mit mir in Kontakt treten? ...
-                </p>
-                <a href="mailto:ricardaerath@gmail.com"
-                   class="inline-block px-8 py-3 border-2 border-black rounded-full font-semibold text-black hover:bg-black hover:text-white transition">
-                  Mail senden
-                </a>
-              </div>
-          
-              <div class="flex flex-col items-center text-center px-6">
-                <h2 class="text-3xl font-bold mb-4">Social Media</h2>
-                <p class="text-gray-600 max-w-md mb-6">Lass uns in Kontakt treten!</p>
-                <div class="flex gap-6">
-                  <a href="https://www.linkedin.com/in/ricarda-erath-a910aa1b2/" target="_blank"
-                     class="bg-white p-3 rounded-full border hover:scale-105 transition">
-                    <img src="img/Twitter.png" alt="LinkedIn Icon" class="w-10 h-10" />
-                  </a>
-                  <a href="https://www.instagram.com/rika.chu/?hl=de" target="_blank"
-                     class="bg-white p-3 rounded-full border hover:scale-105 transition">
-                    <img src="img/Instagram.png" alt="Instagram Icon" class="w-10 h-10" />
-                  </a>
+
+                <div class="flex flex-col items-center text-center px-6">
+                    <h2 class="text-3xl font-bold mb-4">Schreib mir ne Mail!</h2>
+                    <p class="text-gray-600 max-w-md mb-6">
+                        Du möchtest mit mir in Kontakt treten? ...
+                    </p>
+                    <a href="mailto:ricardaerath@gmail.com"
+                        class="inline-block px-8 py-3 border-2 border-black rounded-full font-semibold text-black hover:bg-black hover:text-white transition">
+                        Mail senden
+                    </a>
                 </div>
-              </div>
-          
+
+                <div class="flex flex-col items-center text-center px-6">
+                    <h2 class="text-3xl font-bold mb-4">Social Media</h2>
+                    <p class="text-gray-600 max-w-md mb-6">Lass uns in Kontakt treten!</p>
+                    <div class="flex gap-6">
+                        <a href="https://www.linkedin.com/in/ricarda-erath-a910aa1b2/" target="_blank"
+                            class="bg-white p-3 rounded-full border hover:scale-105 transition">
+                            <img src="img/Twitter.png" alt="LinkedIn Icon" class="w-10 h-10" />
+                        </a>
+                        <a href="https://www.instagram.com/rika.chu/?hl=de" target="_blank"
+                            class="bg-white p-3 rounded-full border hover:scale-105 transition">
+                            <img src="img/Instagram.png" alt="Instagram Icon" class="w-10 h-10" />
+                        </a>
+                    </div>
+                </div>
+
             </div>
-          </section>
-          
+        </section>
+
     </main>
 
     <footer class="w-full bg-black text-gray-400 text-sm pt-10 pb-6 px-8 relative">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
-          
-          <div></div>
-      
-          <div class="flex gap-6 z-10">
-            <a href="#" class="hover:text-white transition">Impressum</a>
-            <a href="#" class="hover:text-white transition">Datenschutz</a>
-          </div>
+
+            <div></div>
+
+            <div class="flex gap-6 z-10">
+                <a href="#" class="hover:text-white transition">Impressum</a>
+                <a href="#" class="hover:text-white transition">Datenschutz</a>
+            </div>
         </div>
-      
+
         <div class="absolute bottom-0 left-8 right-8 h-px bg-gray-600 z-0"></div>
-      </footer>
-      
-      
+    </footer>
+
+
 
 </body>
 
