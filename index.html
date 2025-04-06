@@ -15,19 +15,17 @@
     <header class="bg-white fixed top-0 left-0 w-full shadow z-50">
         <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
-            <button id="menu-toggle" class="lg:hidden text-3xl text-gray-800 z-50">☰</button>
+            <button id="menu-toggle" class="sm:hidden text-3xl text-gray-800 z-50">☰</button>
 
-            <div class="hidden lg:flex gap-8 font-semibold" id="desktop-nav">
+            <div class="hidden sm:flex gap-8 font-semibold" id="desktop-nav">
                 <a href="index.html" class="text-purple-500 font-bold">Home</a>
                 <a href="ueber-mich.html" class="hover:text-purple-500">Über mich</a>
                 <a href="Gleitschirmfliegen.html" class="hover:text-purple-500">Gleitschirmfliegen</a>
                 <a href="Pilates.html" class="hover:text-purple-500">Pilates</a>
-
             </div>
         </nav>
 
-        <div id="nav-links"
-            class="hidden fixed inset-0 bg-white flex flex-col items-center justify-center gap-10 text-3xl font-bold z-40">
+        <div id="nav-links" class="hidden fixed inset-0 bg-white flex flex-col items-center justify-center gap-10 text-3xl font-bold z-40 sm:hidden">
             <a href="index.html">Home</a>
             <a href="ueber-mich.html" class="text-purple-500">Über mich</a>
             <a href="Gleitschirmfliegen.html">Gleitschirmfliegen</a>
@@ -36,17 +34,18 @@
     </header>
 
     <main>
-        <section class="mt-32 px-6 lg:px-0">
-            <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
+        <!-- Start: Hero Section -->
+        <section class="mt-32 px-6 sm:px-4 md:px-6 lg:px-0">
+            <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
 
-                <div class="text-center lg:text-left max-w-xl">
+                <div class="text-center md:text-left max-w-xl">
                     <p class="text-sm text-gray-500 mb-2">Home</p>
-                    <h1 class="text-3xl lg:text-4xl font-bold mb-4">Hi! Ich bin Ricarda</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4">Hi! Ich bin Ricarda</h1>
                     <p class="text-base text-gray-600 mb-6">
                         Auf dieser Seite lernst du mich und meine Hobbys kennen.
                     </p>
 
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <a href="ueber-mich.html"
                             class="px-6 py-2 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition">
                             Über mich
@@ -65,8 +64,9 @@
 
             </div>
         </section>
+        <!-- End: Hero Section -->
 
-
+        <!-- Start: Themenbereiche Section -->
         <section class="px-6 py-20 bg-white">
             <div class="max-w-6xl mx-auto text-center">
                 <h2 class="text-3xl font-bold mb-12">Themenbereiche</h2>
@@ -121,10 +121,9 @@
                 </div>
             </div>
         </section>
+        <!-- End: Themenbereiche Section -->
 
-
-
-
+        <!-- Start: Kontakt Section -->
         <section id="kontakt" class="bg-gray-100 border-t border-b border-black py-16 px-6">
             <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
@@ -156,6 +155,7 @@
 
             </div>
         </section>
+        <!-- End: Kontakt Section -->
 
     </main>
 
@@ -172,8 +172,6 @@
 
         <div class="absolute bottom-0 left-8 right-8 h-px bg-gray-600 z-0"></div>
     </footer>
-
-
 
 </body>
 
